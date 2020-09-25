@@ -1,0 +1,437 @@
+//          Colors
+@background-gray: #f6f6f6;
+@main-text-color: #070707;
+@secondary-text-color: #828282;
+
+//           Resets
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+button {
+  background-color: inherit;
+  border: none;
+}
+
+.main-text () {
+  color: @main-text-color;
+  line-height: 1.2222;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+//          Basic settings
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Khula", sans-serif;
+  font-size: 1.8rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main {
+  padding: 3rem;
+}
+
+.section {
+  display: block;
+  margin: auto;
+  padding: 0 0;
+}
+
+.titles {
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+  padding: 0px 0px;
+  line-height: 0;
+}
+
+.container {
+  max-width: 940px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+//          HEADER
+.header {
+  display: flex;
+  .main-text;
+  padding: 3.2rem 0;
+  font-weight: 700;
+  color: @secondary-text-color;
+  background-color: #fff;
+
+  strong {
+    color: @main-text-color;
+  }
+
+  &-nav {
+    display: flex;
+    flex-grow: 9;
+    justify-content: space-between;
+  }
+
+  &-bottom-border {
+    border-bottom: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  a:hover {
+    color: @main-text-color;
+  }
+
+  &-btn {
+    display: none;
+
+    .switcher {
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: 75px;
+      right: 30px;
+    }
+
+    .btn-lang {
+      .uppercase;
+      font-family: "Khula", sans-serif;
+      font-size: 3.4rem;
+      font-weight: bold;
+      color: @secondary-text-color;
+      background: none;
+
+      &:hover {
+        color: @main-text-color;
+      }
+    }
+
+    &-exit {
+      padding-right: 40px;
+    }
+  }
+}
+
+//            MAIN-PAGE
+.main {
+  margin-top: 4rem;
+  padding: 0 0;
+
+  &-page {
+    display: flex;
+  }
+
+  &-info {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 9;
+    justify-content: space-between;
+  }
+
+  &-Name h1 {
+    font-size: 4.734rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: -10px;
+  }
+
+  &-text-inform {
+    .main-text;
+  }
+
+  &-lang-switcher {
+    .switcher {
+      position: absolute;
+      transform: rotate(-90deg);
+      bottom: 27px;
+      right: -25px;
+    }
+  }
+
+  .btn-lang {
+    padding: 0;
+    .uppercase;
+    font-family: "Khula", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: @secondary-text-color;
+    background: none;
+
+    &:hover {
+      color: @main-text-color;
+    }
+  }
+
+  &-photo {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 10.4rem;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+//                         ABOUT ME PAGE
+.about-me {
+  background-color: @background-gray;
+  padding-top: 12rem;
+  padding-bottom: 6.7rem;
+
+  &-text {
+    .main-text;
+
+    p {
+      margin-top: 5rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+//                       SKILLS PAGE
+.skills {
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 5.5rem;
+
+  &-second-titles {
+    .main-text;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+  }
+
+  &-text {
+    margin-top: 2.7rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    line-height: 1.214;
+    font-weight: bold;
+    color: @secondary-text-color;
+  }
+
+  &-slider img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-item {
+    margin-bottom: 5.5rem;
+  }
+}
+
+//                  PORTFOLIO PAGE
+.portfolio {
+  padding-top: 11.2rem;
+  padding-bottom: 4.5rem;
+  background-color: @background-gray;
+
+  &-image {
+    width: 100%;
+    margin: 4.5rem 0;
+  }
+
+  &-text {
+    .main-text;
+    margin-bottom: 5.5rem;
+    text-decoration-line: underline;
+  }
+
+  &-slider {
+    padding: 0 2.3rem;
+  }
+}
+
+//                   FOOTER PAGE
+.footer {
+  padding-top: 11.4rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+
+  &-text {
+    margin: 3rem 0;
+  }
+
+  &-btn {
+    font-family: "Khula", sans-serif;
+    font-weight: 700;
+    padding: 1.3rem 3rem 0.8rem;
+    color: white;
+    background-color: @main-text-color;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: white;
+      color: @main-text-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-social-resurses {
+    margin: auto;
+    margin-top: 8.5rem;
+    margin-bottom: 4.6rem;
+    display: flex;
+    max-width: 31rem;
+    justify-content: space-between;
+  }
+
+  &-like {
+    font-size: 1.4rem;
+    line-height: 1.21;
+    color: @secondary-text-color;
+  }
+}
+
+//          SLIDER SETTINGS
+.slick-active,
+button,
+.header-btn-exit:focus,
+.btn-lang:focus,
+.slick-slide:focus {
+  outline: none;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 99;
+  width: 1rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-200%);
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.prev {
+  left: 5%;
+  background: url(../img/arrov-left.svg) center no-repeat;
+  background-size: 80%;
+}
+
+.next {
+  right: 5%;
+  background: url(../img/arrov-right.svg) center no-repeat;
+  background-size: 80%;
+}
+
+.prev2 {
+  left: 0%;
+  background: url(../img/arrov-left.svg) center no-repeat;
+  background-size: 80%;
+}
+
+.next2 {
+  right: 0%;
+  background: url(../img/arrov-right.svg) center no-repeat;
+  background-size: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    padding: 45px 15px;
+    transition: 0.7s;
+    display: none;
+
+    &-nav {
+      flex-direction: column;
+      flex-grow: 2;
+      justify-content: space-between;
+      height: 50%;
+    }
+
+    &-link {
+      margin-bottom: 48px;
+      font-size: 34px;
+    }
+
+    &-btn {
+      display: flex;
+      flex-grow: 4;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 650px;
+    }
+
+    &-bottom-border {
+      border: none;
+    }
+  }
+
+  .main {
+    &-text-inform {
+      margin-left: 0;
+    }
+
+    &-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-lang-switcher {
+      display: none;
+    }
+
+    &-Name {
+      margin-bottom: 20px;
+    }
+
+    &-photo {
+      display: none;
+    }
+
+    .mobile-img {
+      display: block;
+    }
+
+    .menu-btn {
+      display: block;
+    }
+  }
+
+  .header-active {
+    display: flex;
+    transform: translateY(-50px);
+    z-index: 99;
+  }
+}
